@@ -32,7 +32,7 @@ function cycleFrames (_nyanCat, _currentFrame) {
 })()
 
 function DownloadPdf() {
-    const file = "https://github.com/noamavned/portfolio/blob/main/src/Resume.pdf";
+    const file = "https://raw.githubusercontent.com/noamavned/portfolio/main/src/Resume.pdf";
     var el = document.createElement('a');
     el.href = file;
     el.setAttribute('download', '')
