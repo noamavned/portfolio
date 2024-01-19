@@ -1,0 +1,40 @@
+.DinoContainer {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    background: red;
+}
+
+.Dino {
+    width: 75px;
+    position: absolute;
+    left: 1vw;
+    bottom: 0;
+    -webkit-user-drag: none;
+    animation: dinoAnimation 10s infinite linear forwards;
+}
+
+@keyframes dinoAnimation {
+
+    0%,
+    100% {
+        left: 1vw;
+    }
+
+    0%,
+    48% {
+        transform: rotateY(0deg);
+    }
+
+    50%,
+    99% {
+        transform: rotateY(180deg);
+    }
+
+    50% {
+        left: 94vw;
+    }
+}
